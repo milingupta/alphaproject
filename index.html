@@ -8,6 +8,7 @@
   <title>AlphaProject</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -16,10 +17,14 @@
       <img class="nav-img" src="icon.png" alt="AlphaProject">
       <span class="nav-name">AlphaProject</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="android.html">Android</a></li>
       <li><a href="support.html">Support</a></li>
       <li><a href="privacy.html">Privacy Policy</a></li>
     </ul>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   <section class="hero">
@@ -51,6 +56,19 @@
       <p>Have a question or encountered an issue? Reach out directly and it will be addressed as soon as possible.</p>
       <a href="support.html">Get Support →</a>
     </div>
+
+    <div class="card">
+      <div class="card-icon">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M6 2l-4 7h16l-4-7H6z" stroke="#82C8E5" stroke-width="1.8" stroke-linejoin="round" fill="none"/>
+          <rect x="3" y="9" width="14" height="8" rx="1.5" stroke="#82C8E5" stroke-width="1.8" fill="none"/>
+          <path d="M8 13v2M12 13v2" stroke="#82C8E5" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h2>Android</h2>
+      <p>On Android? Download the AlphaProject APK directly — no Play Store required.</p>
+      <a href="android.html">Download for Android →</a>
+    </div>
   </div>
 
   <section class="contact">
@@ -62,6 +80,7 @@
   <footer>
     <p>© 2026 Milin Gupta. All rights reserved.</p>
     <div style="display:flex;gap:20px;">
+      <a href="android.html">Android</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy Policy</a>
     </div>
